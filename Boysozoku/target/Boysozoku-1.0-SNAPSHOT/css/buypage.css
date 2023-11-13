@@ -1,0 +1,329 @@
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+img.custom{
+    position: fixed;
+    width: 40vmin;
+    height: 40vmin;
+    z-index: -1;
+}
+
+img.shell{
+    z-index: -2;
+    width: 40vmin;
+}
+
+img.mask{
+    width: 40vmin;
+    height: 40vmin;
+    z-index: 1;
+    position: relative;
+    left: -100%;
+}
+img.buttons{
+    width: 40vmin;
+    height: 40vmin;
+    z-index: 2;
+    position: relative;
+    left: -200%;
+}
+
+select{
+    font-family: 'PF Tempesta Seven', sans-serif;
+}
+#immagine{
+    font-family: 'PF Tempesta Seven', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'ArcadeClassic', sans-serif;
+    overflow-y: hidden;
+    background-image: url("../image/Samus_pattern.png");
+    color: white;
+}
+
+div{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.container{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    height: 60vh;
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.print{
+    display: flex;
+    height: 40vmin;
+    width: 40vmin;
+    border-radius: 3px;
+    outline: .4vw solid #FBB8FE;
+    outline-offset: 1vw;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top:0px;
+}
+
+
+.right{
+    height: 60vh;
+    width: 60%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.riga{
+    display:flex;
+    gap: 40px;
+}
+
+.riga label{
+    font-size:3vw;
+    color:#8DF110;
+}
+
+#shell{
+    width: 30vw;
+    background-color:#F8B000;
+    outline: .4vw solid #FBB8FE;
+    border-radius: 3px;
+    outline-offset: .5vw;
+    font-size: 2vw;
+}
+#screen{
+    width: 28vw;
+    background-color:#F8B000;
+    outline: .4vw solid #FBB8FE;
+    border-radius: 3px;
+    outline-offset: .5vw;
+    font-size: 2vw;
+}
+
+#buttons{
+    width: 28vw;
+    background-color:#F8B000;
+    outline: .4vw solid #FBB8FE;
+    border-radius: 3px;
+    outline-offset: .5vw;
+    font-size: 2vw;
+}
+
+.lowercontainer{
+    height: 40vh;
+    display: flex;
+}
+
+.lowerleft{
+    height: 40vh;
+    width: 70%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    gap: 20%;
+}
+
+.lowerleft button{
+    width: 10vw;
+}
+
+.lowerright{
+    height: 40vh;
+    width: 30%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+#presetname{
+    height: 10vh;
+    width: 60vw;
+    float: left;
+    border: none;
+    margin-left: 5%;
+    font-size: 4vw;
+    outline: .5vw solid #FBB8FE;
+    border-radius: 10px;
+    outline-offset: 1vw;
+    background-color:#F8B000;
+    font-family: 'PF Tempesta Seven', sans-serif;
+}
+
+.underleft{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.lowerright label{
+    font-size: 1.5vw;
+    font-family: 'PF Tempesta Seven', sans-serif;
+}
+
+.lowerright h5{
+    height: 3vh;
+    font-size: 2vw;
+    width: 20vw;
+}
+
+.lowerright button{
+    width:10vw;
+    height: 5vh;
+    align-self:center
+}
+
+.close{
+    height:10vmin;
+    width:10vmin;
+    display:flex;
+    justify-content:end;
+}
+
+.close button{
+    font-size: 6vw;
+    width: 9vmin;
+    text-align:center;
+    line-height:50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 9vmin;
+}
+
+button a{
+    text-decoration:none;
+    color: black;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    /*-----------------sopra-----------------*/
+    .container{
+        flex-direction: column;
+    }
+
+    .print{
+        height: 40vmin;
+        width: 40vmin;
+    }
+
+    .left{
+        width:100%;
+        height: 60vh;
+        justify-content: center;
+        gap: 5vmin;
+    }
+
+    .right{
+        width:100%;
+        height: 30vh;
+        gap: 20px;
+    }
+
+    .riga{
+        display:flex;
+        gap: 20px;
+    }
+
+    .riga label{
+        font-size:6vw;
+    }
+
+    #shell{
+        width: 50vw;
+        font-size: 4vw;
+    }
+    #screen{
+        width: 50vw;
+        font-size: 4vw;
+    }
+    #buttons{
+        width: 50vw;
+        font-size: 4vw;
+    }
+
+    .close{
+        position: relative;
+        top: -53vh;
+        left: 88vw;
+    }
+
+
+    /*-----------------sotto-----------------*/
+
+
+    .lowercontainer{
+        flex-direction: column;
+    }
+
+    .lowerleft{
+        width: 99%;
+    }
+    .underleft{
+        width: 93vw;
+        gap: 16px;
+    }
+
+    #presetname{
+        width: 90%;
+        text-align:center;
+        height: 6vh;
+    }
+
+    .lowerleft button{
+        width: 15vw;
+        font-size: 4vw;
+        text-align:center;
+    }
+
+    .lowerright{
+        width:100%;
+    }
+
+
+    .lowerright label{
+        font-size: 3vw;
+    }
+
+    .lowerright h5{
+        font-size: 4vw;
+    }
+
+    .lowerright button{
+        width:10vw;
+        height: 4vh;
+        align-self:center;
+        font-size: 4vw;
+    }
+
+}

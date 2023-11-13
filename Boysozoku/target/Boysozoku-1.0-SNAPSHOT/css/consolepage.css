@@ -1,0 +1,203 @@
+html { overflow-y: hidden; }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'ArcadeClassic', sans-serif;
+    overflow-y: hidden;
+    background-image: url("../image/Libreria.png"), url("../image/Plank.png");
+    background-position: top, bottom;
+    background-size: 15vh, 2%;
+    background-repeat: repeat-x,repeat
+}
+
+/*----------------------PARTE SOPRA------------------------*/
+
+.sopra{
+    height: 20vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.close{
+    height: 10vh;
+    align-self: end;
+}
+
+.close button{
+    background-color: lightgray;
+    font-size:6vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bt{
+    width:10vmin;
+    height:10vmin;
+}
+
+.bt a{
+    text-decoration:none;
+    color:black;
+    width:100%;
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+
+.info{
+    background-color: white;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 3vw;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+    border-radius: 10px;
+}
+
+/*----------------------PARTE SOTTO------------------------*/
+
+.table{
+    height:60vh;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.colonna{
+    width: 25vw;
+    height: 55vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-self: center;
+}
+
+.item{
+    background-color: white;
+    height: 65%;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+}
+
+.description{
+    background-color: white;
+    height:20%;
+    display: flex;
+    justify-content: center;
+    font-size: 1vmin;
+    overflow-y: scroll;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+    border-radius: 10px;
+    font-family: 'PF Tempesta Seven', sans-serif;
+    text-align: center;
+}
+.description::-webkit-scrollbar {
+    display: none;
+}
+
+#GB{
+    background-image: url("../image/Game Boy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    font-size: 5vw;
+}
+#GBA{
+    background-image: url("../image/Game Boy Advance.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    font-size: 5vw;
+}
+
+#GBC{
+    background-image: url("../image/Game Boy Color.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    font-size: 5vw;
+}
+
+
+.tavolo{
+    background-image: url("../image/Livello1.png"), url("../image/Livello 2.png"),url("../image/Background.png");
+    background-size: contain, contain, contain;
+    background-position: left, right, center;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    height: 20vh;
+    display:flex;
+    justify-content: space-evenly;
+    gap:170px;
+}
+
+.pokeball{
+    position: relative;
+    bottom: 20px;
+}
+
+.tavolo img{
+    width: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .tavolo{
+        gap: 10px;
+    }
+
+    a{
+        background-size: contain;
+    }
+
+    .close{
+        height: 7vh;
+    }
+
+    .table{
+        width: 100%;
+        height: 60vh;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .colonna{
+        display: flex;
+        flex-direction: row;
+        height: 45vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item{
+        width: 32%;
+        height: 15vh;
+        border-style: dashed;
+        border-color: black;
+        border-width: .4vw;
+    }
+
+    .description{
+        width: 68%;
+        height: 15vh;
+        font-size: 1.7vw;
+    }
+
+    .description h2{
+        width:100%;
+        margin-left: 15px;
+    }
+
+}

@@ -1,0 +1,295 @@
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+img.shell{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+img.mask{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, -102%, 1px);
+}
+img.buttons{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, -204%, 20px);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    background-image:  url("../image/Rob.gif"), url("../image/Nes_pattern.png"), url("../image/Nes_pattern.png"), url("../image/stars-space.gif");
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat;
+    background-position-x: left, center, center, center;
+    background-position-y: 81vh, top, bottom, center;
+    background-size: 10vh, 3vh, 5vh, 30%;
+    animation: movment 8s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes movment{
+    0% {background-position-x: -20vw, center, center, center;}
+    100% {background-position-x:  101vw, center, center, center;}
+}
+
+.container{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+}
+
+.close{
+    height:8vh;
+    width:100%;
+    display:flex;
+    justify-content:end;
+}
+
+.close button{
+    font-size: 6vw;
+    width: 8vw;
+    text-align:center;
+    line-height:50%;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+.logo{
+    color: #65AFF7;
+    text-shadow:
+            3px 3px 0 white,
+            -3px 3px 0 #000,
+            -3px -3px 0 #000,
+            3px -3px 0 #000;
+    height: 17vh;
+    width: 70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 7vw;
+    animation-name: color-change;
+    animation-duration: 10s;
+    background-color: #012B82;
+    border: 15px solid #65AFF7;
+    border-radius: 20px;
+    box-shadow: inset white -5px -5px 0 2px, inset black 6px 6px 0px 1px;
+}
+
+
+@keyframes color-change{
+    15% {color: blue}
+    35% {color: purple}
+    50% {color: red}
+    65% {color: red}
+    80% {color: darkorange}
+    87% {color: yellow}
+    95% {color: limegreen}
+    100% {color: #65AFF7}
+}
+
+.social{
+    height: 54vh;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 100px;
+}
+
+.cartuccia{
+    height: 60vmin;
+    min-width: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../image/Cartuccia.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nome{
+    border: solid lightgray;
+    border-radius: 60px;
+    border-style:solid;
+    border-width: 5px;
+    margin-bottom: 36px;
+    width: 28vmin;
+    position: relative;
+    bottom: -10px;
+}
+
+.item{
+    display:flex;
+    flex-direction:column;
+    width:58%;
+    height: 63%;
+}
+
+.sopra{
+    display:flex;
+    justify-content:start;
+    height: 6vh;
+    width: 30vmin;
+    align-self: center;
+}
+
+.Preview{
+    background-color: cadetblue;
+    width: 60%;
+    font-size: 2vw;
+    display:flex;
+    align-items:center;
+}
+
+.likes{
+    background-color: white;
+    width: 40%;
+    font-size: 1.5vw;
+    display:flex;
+    align-items:center;
+    border-style: dashed;
+    border-color: black;
+    border-width: .2vw;
+}
+
+.console{
+    background-color: green;
+    height: 23vh;
+    display:inline;
+    align-items:center;
+    width: 30vmin;
+    align-self: center;
+}
+
+.preset{
+    height:5vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 3vmin;
+    font-family: 'PF Tempesta Seven';
+}
+
+.user{
+    display:flex;
+    justify-content:center;
+    align-items:end;
+    font-size: 3vmin;
+}
+
+.filter{
+    height: 10vh;
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 4vw;
+    position: relative;
+    bottom: -6vh;
+}
+
+
+@media only screen and (max-width: 700px){
+
+
+    body{
+        animation: movment 4s infinite;
+        animation-timing-function: linear;
+    }
+
+    .close button{
+        width: 15vw;
+        font-size: 15vw;
+    }
+
+    .item{
+        width: 80vw;
+    }
+
+    .logo{
+        font-size: 12vw;
+    }
+
+    .Preview{
+        font-size: 6vw;
+    }
+
+    .likes{
+        font-size: 4vw;
+    }
+
+    .preset{
+        font-size: 7vw;
+        width: 50vw;
+        position: relative;
+        left: -5px;
+    }
+
+    .user{
+        font-size: 6vw;
+        width: 40vw;
+        position: relative;
+        left: 15px;
+        bottom: 4px;
+    }
+
+    .filter{
+        font-size: 9vw;
+    }
+
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        gap: 70px;
+        overflow-y: auto;
+    }
+
+    .cartuccia{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .sopra{
+
+        width: 44vw;
+        bottom: -4px;
+        position: relative;
+        height: 10vmin;
+    }
+
+    .console{
+
+        width: 44vw;
+        position: relative;
+        bottom: -1vmin;
+        height: 32vmin;
+    }
+
+    .nome{
+
+        width: 48vw;
+        align-self: center;
+        bottom: -6vmin;
+    }
+}

@@ -1,0 +1,260 @@
+img.shell{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+img.mask{
+    position: fixed;
+    width: 100%;
+
+    z-index: 3;
+}
+img.buttons{
+    width: 100%;
+
+    z-index: 5;
+    position: fixed;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'ArcadeClassic', sans-serif;
+    background-color: #FCC9C5;
+    overflow: hidden;
+    background-image: url("../image/Rocce.gif");
+    background-repeat:no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: 100vw 93vh;
+}
+
+div{
+    display: grid;
+    perspective: 200px;
+    perspective-origin: center;
+    height: 100%;
+}
+.header{
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sfondo{
+    height: 45vh;
+    align-content: start;
+    line-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border: 5px solid #3B8D03;
+    /*! width: 90%; */
+    margin: 10px auto;
+}
+
+.about{
+    height: 15vh;
+    display: grid;
+    align-content: center;
+    align-self: center;
+    width: 80vw;
+}
+
+.cart{
+    width: 8vmin;
+    height: 8vmin;
+    background-color: white;
+}
+.sopra{
+    height: 43vh;
+    align-content: start;
+}
+
+.social{
+    width: 100%;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    column-gap: 200px;
+    overflow-x: auto;
+}
+
+button{
+    width: 38vh;
+    height: 28vh;
+}
+
+h1 {
+    font-size: 7vw;
+    text-align: center;
+    color: #6E5007;
+    text-shadow: 8px 8px 0 black;
+    transform: translateZ(0) rotateX(20deg);
+}
+
+.sopra a{
+    font-size: 3vw;
+    text-align: center;
+    height:7vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color: black;
+
+
+}
+.title{
+    height:8vh;
+    align-self: start;
+}
+
+p{
+    line-height: normal;
+    font-size: 2.5vmax;
+    text-align-last: left;
+    height: 17vh;
+    position: relative;
+    /* left: 100px; */
+}
+
+
+.username{
+    width: 90%;
+    text-align: left;
+    align-self: center;
+    font-size: 3vmax;
+    color: white;
+    position: relative;
+    left: 10px;
+}
+
+.shop{
+    display: table;
+    justify-content: center;
+    text-align: center;
+    height: 7vh;
+    align-self: end;
+    /*! width: 80vw; */
+    align-items: center;
+    vertical-align: middle;
+}
+
+.shopping{
+    background: #C7A22E;
+    font-size: 5vmin;
+    text-decoration: none;
+    color: #6E5007;
+    border-style: solid;
+    border-color: black;
+    border-width: .4vw;
+    animation: color-change 1s infinite;
+    text-shadow: 4px 3px 0px black;
+    padding: 10px;
+}
+
+
+@keyframes color-change{
+    0%{background: #3A2309 }
+    15%{background: #735104 }
+    35%{background: #CC9F23 }
+    55%{background: #E0CDA6 }
+    65%{background: #CC9F23 }
+    80%{background: #735104 }
+    100%{background: #3A2309 }
+}
+
+
+
+.b{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 15vw;
+    height: 15vw;
+    border: solid #3B8D03 5px;
+}
+
+@media only screen and (max-width:600px){
+
+    body{
+
+        background-size: 100vw 60vh;
+    }
+
+    .cart{
+        width:25vmin;
+        height: 16vmin;
+    }
+
+    .header{
+        width: 100vw;
+    }
+
+    p{
+        font-size: 5vw;
+        text-align: left;
+        position: relative;
+        left: 4px;
+    }
+
+    h1{
+        /*! width: 94vw; */
+        font-size: 16vw;
+
+        position: relative;
+        bottom: 20px;
+        text-shadow: 7px 5px 0px black;
+    }
+
+    .sfondo{
+        width: 92vw;
+        font-size: 4vw;
+
+    }
+
+    .sopra{
+        width: 100vw;
+    }
+
+    .sopra a{
+
+        font-size: 13vw;
+    }
+
+    .shopping{
+        text-shadow: 2px 1px 0px black;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        font-size: 7vmin;
+        padding: 20px;
+    }
+
+    .social{
+
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        overflow-y: auto;
+        justify-content: center;
+        height: 36vh;
+    }
+
+    .shell{
+        height: 30vmin;
+    }
+    .mask{
+
+    }
+    .buttons{
+
+    }
+    .b{
+
+        width: 30vw;
+        height: 30vh;
+    }
+}

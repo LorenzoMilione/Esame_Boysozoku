@@ -1,0 +1,321 @@
+*{   font-family: 'ArcadeClassic', sans-serif;}
+
+body{
+    /* for Internet Explorer, Edge */
+    /* for Firefox */
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    background: black;
+}
+
+div{
+    display: block;
+}
+
+.sopra{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 45vh;
+    gap:25px;
+}
+
+.close{
+    width: 8vmin;
+    height: 8vmin;
+    float:right;
+    align-self: start
+}
+.close button{
+    font-size:5vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#propic{
+    font-size: 2vw;
+
+    color: transparent;
+}
+
+.bt{
+    width:100%;
+    height:100%;
+}
+
+.bt a{
+    text-decoration:none;
+    color:black;
+}
+
+
+.profile{
+
+    width: 34vmin;
+    height: 34vmin;
+}
+
+.profile img{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+}
+
+.edit{
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.edit h3{
+    font-size: 2.5vw;
+}
+
+.user{
+    width: 50%;
+    height: 20%;
+    align-content:center;
+}
+.user h2{
+    font-size: 5vw;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    align-items: center ;
+}
+.sotto{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 50%;
+    float:left;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shared{
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 50%;
+    gap: 10px;
+}
+
+.form{
+    width: 40vw;
+    height:40vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+.form h2{
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+input{
+    line-height: 20px;
+    width: 100%;
+    height:101%;
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 3vw;
+}
+
+.save{
+    position:relative;
+    width: 50%;
+    height: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 5vw;
+}
+
+.post{
+    height:79%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size: 6vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.post h5{
+    width:100%;
+    text-align:center;
+    height: 100%;
+}
+.preset{
+    width: 50%;
+    height: 11%;
+
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    font-size: 3vw;
+}
+
+.h4{
+    font-size: 3em;
+}
+
+.user, .profile , .form , .save , .edit, .post, .preset, .form2{
+    border-style: double;
+    border-color: white;
+    border-width: 8px;
+    background: #0100C6;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.sotto2{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.presetname2 , .like2{
+    height: 7vh;
+    width: 15vw;
+    text-align: center;
+    text-align-last: center;
+    font-size: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.console2{
+    object-fit: contain;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vmin;
+    width: 10vmin;
+}
+
+.post h2{
+    font-size: 2vw;
+}
+
+
+.form2{
+    display:flex;
+    flex-direction: row;
+
+    width: 33vw;
+    justify-content: center;
+}
+
+input[type=file]::file-selector-button{
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+@media only screen and (max-width: 700px){
+
+
+    .sopra{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        gap:5px;
+    }
+
+    .close{
+        order: -1;
+        align-self: end;
+    }
+
+    .profile{
+        order: 1;
+        width:30%;
+        align-self:center;
+        justify-content:center;
+    }
+
+    .edit{
+        order: 1;
+        width:15vw;
+        align-self:center;
+        text-align:center;
+        display: table;
+        height: 6vh;
+    }
+
+    .edit h3{
+        font-size:2vh;
+    }
+
+    .user{
+        order: 2;
+        width:100%;
+        height:30%;
+    }
+
+    .user h2{
+        font-size: 13vw;
+        text-align:center;
+    }
+
+    .preset h3{
+        font-size: 5vw;
+        text-align:center;
+    }
+
+    .post{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .sotto2{
+        height: 10vh;
+        gap: 0;
+    }
+
+    .presetname2{
+
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .form2{
+
+        width: 30vw;
+    }
+
+    .form2 h2{
+
+        font-size: 3vw;
+        width: 6vw;
+    }
+
+    .like2{
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+}

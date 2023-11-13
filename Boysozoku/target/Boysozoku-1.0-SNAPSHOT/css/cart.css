@@ -1,0 +1,222 @@
+*{
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'ArcadeClassic', sans-serif;
+    overflow-y: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.image{
+
+    height: 20vmin;
+}
+
+div{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+
+}
+
+.close{
+    height: 8vh;
+    display: flex;
+    justify-content: end;
+}
+
+.close button{
+    font-size: 5vw;
+    font-family: 'ArcadeClassic', sans-serif;
+    text-align:center;
+    line-height:50%;
+}
+
+.bt{
+    height: 10vmin;
+    width: 10vmin;
+    border-style: double;
+    border-color: black;
+    border-width: 0.5vw;
+    border-radius: 10px;
+}
+
+.bt a{
+    text-decoration:none;
+    color: black;
+}
+
+.table{
+    height: 77vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap: 10px;
+}
+
+.logo{
+    height: 10vh;
+    width: 50%;
+    font-size: 3vw;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+    border-radius: 10px;
+}
+
+.cart{
+    height: 50vh;
+    width: 70%;
+    overflow-y: scroll;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 10%;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+.item{
+    width:100%;
+    height: 22vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 4%;
+    background: #DBDAD9;
+}
+
+.console{
+    width:30%;
+    height: 100%;
+    justify-content: left;
+}
+
+.desrizione{
+    width: 80%;
+    justify-content: start;
+    align-content: center;
+    font-size: 2vw;
+}
+
+.desrizione h4{
+    height: 20vh;
+    font-family: 'PF Tempesta Seven';
+    font-size: 2vmin;
+    text-align: left;
+}
+
+.x{
+    width: 10%;
+    justify-content: center;
+    font-size: 8vw;
+    text-decoration: none;
+}
+
+.lower{
+    height: 11vh;
+    width: 80%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    border-color: black;
+    border-width: 1vw;
+    border-radius: 10px;
+    position: relative;
+    left: 9%;
+    gap: 40px;
+}
+
+.total{
+    height:10vh;
+    width: 20%;
+    font-size: 2.5vw;
+    width: 28vw;
+}
+
+.price{
+    height:10vh;
+    width: 20%;
+    font-size: 4vw;
+}
+
+.buy{
+    width: 25%;
+}
+
+.buy button{
+    height: 9vh;
+    width: 100%;
+    border: solid black 2px;
+}
+.compra{
+    height:15vh;
+    width: 100%;
+    font-size: 6vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.compra a{
+    text-decoration: none;
+    color: black;
+}
+@media only screen and (max-width: 700px){
+
+    .desrizione h4{
+
+        font-size: 2.5vmin;
+    }
+
+    .logo{
+        font-size: 4vw;
+        width: 70%;
+    }
+
+    .desrizione{
+        font-size: 4.5vw;
+    }
+
+    .total{
+        font-size: 3vw;
+    }
+
+    .price{
+        font-size: 6vw;
+    }
+
+    .buy button{
+        font-size: 8vw;
+    }
+
+    .total , .price, .buy{
+        width: 20%;
+    }
+
+    .cart{
+        height: 60vh;
+        width: 85%;
+    }
+}
